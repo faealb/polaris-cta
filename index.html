@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="Description" content="Put your description here.">
+  <base href="/">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&amp;family=Roboto+Slab:wght@400;500;700&amp;family=Roboto:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Roboto, "Franklin Gothic Medium", Tahoma, sans-serif;
+      background-color: #ededed;
+      --polaris-cta-psu-white: #ffffff;
+      --polaris-cta-psu-gray:#E4E5E7;
+      --polaris-cta-psu-darkblue: #011E44;
+      --polaris-cta-psu-black: #000000;
+    }
+
+    div {
+      height: 48px;
+      width: 432px;
+      padding: 16px;
+      margin: 16px;
+      display: flex;
+    }
+    
+    p {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .white-bg {
+      background-color: var(--polaris-cta-psu-white);
+    }
+
+    .gray-bg {
+      background-color: var(--polaris-cta-psu-gray);
+    }
+
+    .blue-bg {
+      background-color: var(--polaris-cta-psu-darkblue);
+    }
+
+    .white-text  {
+      color: var(--polaris-cta-psu-white);
+    }
+
+    .black-text  {
+      color: var(--polaris-cta-psu-black);
+    }
+  </style>
+  
+  <title>polaris-cta</title>
+</head>
+
+<body>
+  <div class="white-bg">
+    <p class="black-text">Get the news by email</p>
+    <polaris-cta type="primary" outlined>Subscribe</polaris-cta>
+  </div>
+  <div class="white-bg">
+    <p class="black-text">Get the news by email</p>
+    <polaris-cta type="primary" filled>Subscribe</polaris-cta>
+  </div>
+  <div class="gray-bg">
+    <p class="black-text">Get the news by email</p>
+    <polaris-cta type="tinted">Subscribe</polaris-cta>
+  </div>
+  <div class="blue-bg">
+    <p class="white-text">Get the news by email</p>
+    <polaris-cta type="light" outlined>Subscribe</polaris-cta>
+  </div>
+  <div class="blue-bg">
+    <p class="white-text">Get the news by email</p>
+    <polaris-cta type="light" filled>Subscribe</polaris-cta>
+  </div>
+
+  <script type="module" src="./src/polaris-cta.js"></script>
+</body>
+
+</html>
